@@ -13,7 +13,7 @@ class Rectangle{
   }
 }
 
-function calendrier() {
+function Calendrier() {
 
   return (
     <div>
