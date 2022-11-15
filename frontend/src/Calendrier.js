@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 
-function MyApp() {
+function calendrier() {
   const [value, onChange] = useState(new Date());
 
   return (

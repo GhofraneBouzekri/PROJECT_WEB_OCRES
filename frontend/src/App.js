@@ -1,9 +1,11 @@
 import './App.css';
-import Calendrier from './Calendrier'
+import Calendar from 'react-calendar';
+import Calendrier from './calendrier'
 
 function App() {
   return (
-<Calendrier />  );
+    <div classeName="Dashboard">
+      <Calendar />
+    </div>  );
 }
-
 export default App;
