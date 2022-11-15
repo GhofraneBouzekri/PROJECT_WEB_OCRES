@@ -1,10 +1,9 @@
 import './App.css';
 import Calendrier from './calendrier'
 
-function App() {
+export default function App() {
   return (
     <div classeName="Dashboard">
       <Calendrier />
     </div>  );
 }
-export default App; 
