@@ -1,24 +1,13 @@
-import Calendar from 'react-calendar';
+import React, {useState} from 'react';
+import Calendar from 'react-calendar'; 
 
-class Rectangle{
-  constructor(hauteur,largeur){
-    this.hauteur=hauteur;
-    this.largeur=largeur;
-  }
-  getHauteur() {
-    return this.hauteur
-  }
-  getLargeur() {
-    return this.largeur
-  }
-}
-
-function Calendrier() {
-
-  return (
-    <div>
-      <Calendar/>;
-      <Rectangle hauteur={30} largeur={40} />;
+export default function calendrier(){
+    const [value, onChange]= useState(new Date());
+    return(
+      <div class='calen'>
+      <Calendar onChange={onChange} value={value} />
     </div>
-  );
+      )
 }
+
+

@@ -3,7 +3,7 @@ import Calendrier from './calendrier'
 
 export default function App() {
   return (
-    <div className="Dashboard">
+    <div className='projetweb'>
       <Calendrier />
     </div>  );
 }
