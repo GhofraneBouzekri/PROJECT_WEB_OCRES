@@ -4,7 +4,7 @@ import Calendar from 'react-calendar';
 export default function calendrier(){
     const [value, onChange]= useState(new Date());
     return(
-      <div class='calen'>
+      <div className='calen'>
       <Calendar onChange={onChange} value={value} />
     </div>
       )
