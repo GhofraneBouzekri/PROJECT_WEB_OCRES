@@ -1,13 +1,18 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Calendar from 'react-calendar'; 
 
-export default function calendrier(){
-    const [value, onChange]= useState(new Date());
+export default class Calendrier extends React.Component{
+  constructor(props){
+    super(props);
+    this.state={
+      jour:new Date()
+    };
+  }
+  render(){
     return(
-      <div className='calen'>
-      <Calendar onChange={onChange} value={value} />
-    </div>
-      )
+      <div>
+        <Calendar onChange={this.setState} value={this.state.jour} />
+      </div>
+    )
+  }
 }
-
-

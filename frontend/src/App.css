@@ -1,5 +1,4 @@
-#calen{
-  width:200px;
-  height:200px;
+.App{
+  display:flex;
   align-content: flex-end;
 }

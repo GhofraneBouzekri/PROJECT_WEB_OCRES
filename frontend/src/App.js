@@ -4,6 +4,6 @@ import Calendrier from './calendrier'
 export default function App() {
   return (
     <div className='projetweb'>
-      <Calendrier />
+      <Calendrier/>
     </div>  );
 }
