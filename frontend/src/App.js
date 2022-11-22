@@ -1,7 +1,9 @@
 import './App.css';
+import Calendrier from './calendrier'
 
-function App() {
+export default function App() {
   return (
+<<<<<<< HEAD
     <div className="App">
       A vous de jouer !
     </div>
@@ -9,3 +11,9 @@ function App() {
 }
 
 export default App;
+=======
+    <div className='projetweb'>
+      <Calendrier/>
+    </div>  );
+}
+>>>>>>> 000b2d30129fe288efac8fd75aaccdb145d0fecd

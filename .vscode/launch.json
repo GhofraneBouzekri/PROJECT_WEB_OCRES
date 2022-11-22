@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
     // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
     // Pointez pour afficher la description des attributs existants.
     // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+=======
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+>>>>>>> 000b2d30129fe288efac8fd75aaccdb145d0fecd
     "version": "0.2.0",
     "configurations": [
         {
