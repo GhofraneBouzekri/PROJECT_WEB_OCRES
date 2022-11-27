@@ -10,7 +10,7 @@ export default class Calendrier extends React.Component{
   }
   render(){
     return(
-      <div>
+      <div className="calendrier">
         <Calendar onChange={this.setState} value={this.state.jour} />
       </div>
     )

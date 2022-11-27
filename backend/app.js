@@ -16,4 +16,14 @@ app.use(cookieParser());
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 
+//Connexion BDD
+const mongoose=require('mongoose');
+mongoose.Promise=global.Promise;
+const dbName='EventCal.Events';
+const dbUrl='mongodb://localhost:27017/EventCal';
+
+mongoose.connect(dbUrl,{
+    useNewUrlParser:true
+});
+
 module.exports = app;
