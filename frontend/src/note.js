@@ -1,28 +1,27 @@
-import React from "react";
+import React from "react"
+import './note.css'
 
-export default class Note extends React.Component(){
-    //Création du rectangle
-    constructor(largeur,hauteur){
-        super(largeur,hauteur)
-        this.hauteur=hauteur
-        this.largeur=largeur
+export default class NameForm extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {value: ''};
+  
+      this.handleChange = this.handleChange.bind(this);
     }
-    render(){
-        <div className="rectangle">
-            <Note hauteur="20" largeur="10"/>
-            <button onClick={calccpt(<input/>)}>Ajouter une note</button>
+  
+    handleChange(event) {
+      this.setState({value: event.target.value});
+    }
+  
+    render() {
+      return (
+        <div className="note">
+            <textarea rows='13'
+                cols='25'
+                placeholder='Your note here...' 
+                value={this.state.value} 
+                onChange={this.handleChange} />
         </div>
+      );
     }
-}
-function calccpt(note1){
-    let cpt=0;
-    if (note1!==''){
-        while (cpt<86400){ //Tant que le compteur est inférieur à 24h
-            cpt ++;
-            return (
-            <h3>
-                {note1}
-            </h3>)
-        }
-    }
-}
+  }

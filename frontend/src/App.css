@@ -1,25 +1,13 @@
-.calendrier{
-  margin-top:400px;
-  display:flex;
-  flex-direction:column;
-  align-content:flex-end;
-  justify-content: space-between;
+.notecompo{
+    display:flex;
 }
-
-.rectangle{
-  height: 1000px;
-  width:100;
-  background-color:coral;
-  display:flex;
-  align-content:flex-end;
+.horlogecompo{
+    display:flex;
+    justify-content:center;
 }
-
-.horloge{
-  height: 30px;
-  width:1200px;
-  color:lightskyblue;
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content: space-between;
-}
+.calcompo{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-around;
+  }
+  

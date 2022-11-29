@@ -1,5 +1,6 @@
 import React from 'react';
 import Calendar from 'react-calendar'; 
+import './calendrier.css';
 
 export default class Calendrier extends React.Component{
   constructor(props){

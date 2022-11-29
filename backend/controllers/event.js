@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');
 const axios=require('axios');
 
-const Events=require('::/models/event')
+const Events=require('../models/event')
 
 exports.findAll=(req,res)=>{
     Events.find({}).then((events)=>{
@@ -34,3 +34,6 @@ exports.findOne=(req,res)=>{
         });
     })
 }
+
+exports.addEvent=(req,res)=>{}
+    

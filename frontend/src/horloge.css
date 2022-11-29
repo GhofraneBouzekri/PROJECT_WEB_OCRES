@@ -1,0 +1,26 @@
+.timecontainer{
+    width:210px;
+    height:100px;
+    display:flex;
+    align-items:center;
+    background-color: rgb(115, 104, 124);
+}
+
+.timedecor{
+    width:200px;
+    height:70px;
+    background-color: rgb(246, 240, 250);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.86);
+    border-radius: 60px;
+    display:flex;
+    align-items:center;
+}
+
+.horloge{
+    color:rgb(0, 0, 0);
+    font-family: 'Inter';
+    font-style:'normal';
+    font-weight: 600;
+    font-size: 26px;
+    top:5%;
+  }

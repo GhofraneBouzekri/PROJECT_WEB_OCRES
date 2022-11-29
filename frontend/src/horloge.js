@@ -1,4 +1,5 @@
 import React from "react";
+import './horloge.css';
 
 export default class Horloge extends React.Component{
     //Il faut prendre un interval et changer toutes les secondes la date
@@ -25,7 +26,10 @@ export default class Horloge extends React.Component{
     render(){
         return(
             <div className="horloge">
-                <h1>{this.state.date.toLocaleTimeString()}</h1>
+                <div className="timecontainer">
+                    <div className="timedecor">
+                    <h1>{this.state.date.toLocaleTimeString()}</h1></div>
+                </div>
             </div>
         )
     }
