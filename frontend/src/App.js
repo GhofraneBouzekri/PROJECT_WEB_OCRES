@@ -1,12 +1,10 @@
-import './App.css'
-import Horloge from './horloge'
+import './App.css';
 import Calendrier from './calendrier'
 
 
 export default function App() {
   return (
-    <div>
-      <Horloge/>
+    <div className='projetweb'>
       <Calendrier/>
     </div>  );
 }
