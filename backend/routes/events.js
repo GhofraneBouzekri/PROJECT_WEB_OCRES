@@ -4,7 +4,7 @@ const axios = require('axios');
 const _ = require('lodash');
 
 const router = express.Router();
-const eventController=require("../controllers/event");
+const eventController=require('../controllers/event');
 
 // Create RAW data array
 const events = [];
@@ -17,6 +17,6 @@ router.put('/',eventController.addEvent);
 
 router.delete('/:id',eventController.deleteOne);
 
-router.post('/:id',eventController.modifyDate);
+router.post('/:id',eventController.modifyEvent);
 
 module.exports=router;

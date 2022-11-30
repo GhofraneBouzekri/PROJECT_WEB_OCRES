@@ -2,7 +2,7 @@ const mongoose=require("mongoose")
 const {Schema}=mongoose;
 
 const eventSchema=new mongoose.Schema({
-    event:String,
+    event:{type:String, required:true},
     date:String
 },{timestamps:true
 }

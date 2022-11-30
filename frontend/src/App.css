@@ -10,4 +10,8 @@
     align-items:flex-end;
     justify-content:space-around;
   }
+.titre{
+    display:flex;
+    justify-content:center;
+}
   

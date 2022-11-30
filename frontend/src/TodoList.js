@@ -56,20 +56,22 @@ const Timer = () => {
             <div className="Todolist_container2">
 
                 <h1> MY TO DO LIST </h1>
-                <div className="Timer-container">
-                    <h1>lol</h1>
-                    <h1>{days} Days</h1>
-                    <h2>{hours} Heures {minutes} Minutes:{seconds} Seconds</h2>
+                <div className="mission-container">
+                    <h2>Devoir 1</h2>
+                    <label>{days} Days</label>
+                    <label>{hours} Heures {minutes} Minutes:{seconds} Seconds</label>
 
                     <button className='start' /*onClick={ }*/>START</button>
-                    <button className='stop' /*</div>onClick={stop}*/>STOP</button>
+                    <button className='stop' /*</div>onClick={stop}*/>EN ATTENTE</button>
                 </div>
-                <div className="Timer-container">
-                    <h1>WORKING TIME MA BELLE</h1>
-                    <h1>{days} Days  </h1>
-                    <h2>{hours} : {minutes} :{seconds} </h2>
+                <div className="position-mission">
+                </div>
+                <div className="mission-container">
+                    <h2>Devoir 2</h2>
+                    <label>{days} Days  </label>
+                    <label>{hours} : {minutes} :{seconds} </label>
                     <button className='start' /*onClick={ }*/>START</button>
-                    <button className='stop' /*</div>onClick={stop}*/>STOP</button>
+                    <button className='stop' /*</div>onClick={stop}*/>EN ATTENTE</button>
 
                 </div>
 

@@ -18,14 +18,20 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/events", eventsRouter);
 
+
 //Connexion BDD
 const mongoose=require('mongoose');
 mongoose.Promise=global.Promise;
-const dbName='EventCal.Events';
-const dbUrl='mongodb://localhost:27017/EventCal';
+const dbName='EventCal';
+const dbUrl=`mongodb://0.0.0.0:27017/EventCal`;
 
 mongoose.connect(dbUrl,{
-    useNewUrlParser:true
-});
+    useNewUrlParser:true,
+},
+(err)=>{
+    if (!err) console.log("MongoDB connected");
+    else console.log("MongoDB unconnected" + err);
+}
+);
 
 module.exports = app;
