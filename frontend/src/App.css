@@ -8,7 +8,7 @@
 .calcompo{
     display:flex;
     align-items:flex-end;
-    justify-content:space-around;
+    justify-content:flex-start;
   }
 .titre{
     display:flex;

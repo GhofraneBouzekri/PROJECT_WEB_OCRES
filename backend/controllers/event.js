@@ -40,43 +40,24 @@ exports.addEvent=(req,res)=>{
     const {event}=req.body;
     const {date}=req.body;
     const id=_.uniqueId();
-    events.push({id,event, date});
-    req.json({
+    events.push({id,event, date})
+    res.json({
         message:`${event} just add it on ${date}`,
         event:{id,event,date}
     })
-    .catch(err=>{
-        if (err.kind==='ObjectId'){
-            return res.status(404).send({
-                message:'event not found with id' + req.paramas.eventId
-            });
-        }
-        return res.status(500).send({
-            message:'Error retrieving event with id' + req.paramas.eventId
-        });
-    })
 }
+
 exports.deleteOne=(req,res)=>{
     const {id}=req.params;
     _.remove(events,["id",id]);
 
     res.json({
-        message:'Just removed ${id}'
-    })
-    .catch(err=>{
-        if (err.kind==='ObjectId'){
-            return res.status(404).send({
-                message:'event not found with id' + req.paramas.eventId
-            });
-        }
-        return res.status(500).send({
-            message:'Error retrieving event with id' + req.paramas.eventId
-        });
+        message:`Just removed ${id}`
     })
 }
+
 exports.modifyEvent=(req,res)=>{
     const {event}=req.body;
-    const {date}=req.body;
     const id=req.params;
 
     const eventToUpdate=_.find(events,["id",id]);
@@ -85,15 +66,5 @@ exports.modifyEvent=(req,res)=>{
 
     res.json({
         message:'Just updated the event ${event}'
-    })
-    .catch(err=>{
-        if (err.kind==='ObjectId'){
-            return res.status(404).send({
-                message:'event not found with id' + req.paramas.eventId
-            });
-        }
-        return res.status(500).send({
-            message:'Error retrieving event with id' + req.paramas.eventId
-        });
     })
 }
