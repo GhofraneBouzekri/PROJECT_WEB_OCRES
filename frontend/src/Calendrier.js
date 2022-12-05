@@ -1,6 +1,7 @@
 import React from 'react';
 import Calendar from 'react-calendar'; 
 import axios from 'axios';
+import 'react-calendar/dist/Calendar.css';
 
 import './calendrier.css';
 
@@ -33,7 +34,8 @@ export default class Calendrier extends React.Component{
   };
 
   getList=()=>{
-    axios.get(BACKEND_BASE_URL).then((response) => response.json()).then((date)=> this.setState({ events: date }));
+    axios.get(BACKEND_BASE_URL).then((response) => {this.setState(response.data)}).catch((error)=>{console.log(error)});
+
   }
 
   addEvent= () => {
@@ -44,8 +46,8 @@ export default class Calendrier extends React.Component{
     axios.delete(`${BACKEND_BASE_URL}/${id}`).then((date) => this.getList());
   }
 
-  affichage=(date)=>{
-    if (date===this.state.events.date){
+  affichage=(newDate)=>{
+    if (this.setState.newDate===this.state.events.date){
         this.getList();
         <button onClick={this.addEvent}> ajouter un évènement </button>;
         <button onClick={this.componentDidUpdate}> modifier un évènement </button>;
@@ -61,9 +63,7 @@ export default class Calendrier extends React.Component{
     return(
       <>
       <div className="calendrier">
-        <Calendar onClick={this.setState} value={this.state.jour}/>
-      </div>
-      <div className="affichage">
+        <Calendar onChange={this.affichage} value={this.state.jour}/>
       </div>
       </>
     )

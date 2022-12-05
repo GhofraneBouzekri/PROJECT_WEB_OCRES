@@ -39,7 +39,7 @@ exports.findOne=(req,res)=>{
 exports.addEvent=(req,res)=>{
     const {event}=req.body;
     const {date}=req.body;
-    const id=_.uniqueId();
+    const {id}=_.uniqueId();
     events.push({id,event, date})
     res.json({
         message:`${event} just add it on ${date}`,

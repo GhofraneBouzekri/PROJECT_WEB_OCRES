@@ -1,16 +1,20 @@
-.notecompo{
+.todolistcompo{
     display:flex;
+}
+
+.notecompo{
+    flex-wrap:nowrap;
+    align-content: flex-start;
 }
 .horlogecompo{
-    display:flex;
-    justify-content:center;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
 }
 .calcompo{
-    display:flex;
-    align-items:flex-end;
-    justify-content:flex-start;
+    flex-direction: column;
+    align-content: flex-end;
   }
-.titre{
+.titredash{
     display:flex;
     justify-content:center;
 }
