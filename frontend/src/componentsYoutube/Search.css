@@ -1,0 +1,100 @@
+.app {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    grid-template-rows: 70px auto;
+
+}
+
+.search-form {
+    border-bottom: 1px solid #d87093;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px;
+    align-items: center;
+
+}
+
+.form-controls {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 4px;
+}
+
+.form-controls input[type="text"] {
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+
+.form-controls input[type="text"]:focus {
+    outline: none;
+    border-color: red;
+    box-shadow: 0 2px 5px rgb(255, 255, 255);
+
+}
+
+.form-controls label {
+    display: none;
+
+}
+
+.video {
+
+    box-shadow: 0 2px 1px rgb(0, 0, 0);
+
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2px;
+    margin: 20px 0;
+}
+
+.video>.title {
+    padding: 10px;
+    text-align: center;
+    background-color: aliceblue;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.video-list {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: space-around;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: "bold";
+}
+
+.video-iframe {
+
+    justify-content: center;
+    outline: none;
+    min-width: 160px;
+    min-height: 50px;
+    padding: 15px;
+    margin-right: 25px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(228, 194, 215);
+    border: 1px solid rgb(226, 217, 217);
+    box-shadow: inset 0px 3px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+
+}
+
+.videolist-titre {
+    text-align: center;
+
+}
+
+
+
+
