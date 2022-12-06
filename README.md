@@ -2,8 +2,9 @@
 
 Hassna AGOUZZAL et Ghofrane BOUZEKRI ont réalisé pendant un mois un dashboard qui est un outil d'aide à la productivité. 
 
+Voici l'accès à notre Trello
 <p align="center">
- <a href="https://gitlab.com/Adrien_Kourganoff/instructions_web_ocres_ing4/-/blob/master/README.md">Trello</a>
+ <a href="https://trello.com/b/opYAwHVE/t%C3%A2ches">Trello</a>
 </p>
 
 ## Description du Dashboard
