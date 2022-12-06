@@ -1,15 +1,7 @@
-.app {
-    display: grid;
-    grid-template-columns: 70% 1fr;
-    grid-template-rows: 70px auto;
-
-}
-
 .search-form {
     border-bottom: 1px solid #d87093;
     display: flex;
     justify-content: flex-start;
-    padding: 0 20px;
     align-items: center;
 
 }
@@ -26,7 +18,6 @@
     display: flex;
     border: 1px solid rgb(0, 0, 0);
     flex-grow: 1;
-    padding: 10px;
     border-radius: 4px;
     font-size: 16px;
 
@@ -54,7 +45,6 @@
 }
 
 .video>.title {
-    padding: 10px;
     text-align: center;
     background-color: aliceblue;
     margin: 0;
@@ -78,8 +68,6 @@
     outline: none;
     min-width: 160px;
     min-height: 50px;
-    padding: 15px;
-    margin-right: 25px;
     font-size: 20px;
     color: rgb(0, 0, 0);
     background-color: rgb(228, 194, 215);
