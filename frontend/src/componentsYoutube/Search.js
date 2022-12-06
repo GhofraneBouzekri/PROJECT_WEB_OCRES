@@ -2,8 +2,11 @@ import React from "react";
 import './Search.css';
 
 class Search extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = { title: "" }
 
-    state = { title: "" }
+    }
 
     onSearchChange = event => {
         const _title = event.target.value

@@ -10,7 +10,7 @@ function getCss(imageur1) {
         backgroundImage: `url(${imageur1})`,
         backgroundSize: "cover",
         backgroundPosition: "center center",
-        height: "180px",
+        height: "100px",
 
     };
     return _styles;

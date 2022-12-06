@@ -1,23 +1,28 @@
-# Projet de fin de semestre
+# Dashboard d'aide à la productivité
 
-A lire impérativement avant de commencer quoi que ce soit, ce sont les règles que vous devrez appliquer tout au long du semestre:
+Hassna AGOUZZAL et Ghofrane BOUZEKRI ont réalisé pendant un mois un dashboard qui est un outil d'aide à la productivité. 
 
 <p align="center">
- <a href="https://gitlab.com/Adrien_Kourganoff/instructions_web_ocres_ing4/-/blob/master/README.md">Règles pour le semestre</a>
+ <a href="https://gitlab.com/Adrien_Kourganoff/instructions_web_ocres_ing4/-/blob/master/README.md">Trello</a>
 </p>
 
-## Introduction
+## Description du Dashboard
 
-Ce repo git contient deux repertoires. L'un concerne la partie backend et l'autre la partie frontend.
+Notre dashboard contient six widgets:
 
-Les deux repertoires ont été initialisé pour vous aider à démarrer le projet dans les meilleures conditions.
+Un widget TodoList sur lequel l'utilisateur peut ajouter, modifier et supprimer des tâches à accomplir.
 
-Chacun de ces repertoires contient un README.md qui vous pouvez vous approprier. Nous vous encourageons à le faire en y mettant toute les informations nécessaires à la compréhension de votre projet
+Un widget Horloge qui indique l'heure actuelle pour que l'utilisateur ait une notion du temps lors du travail et puisse respecter les heures de productivité indiquer dans le graphique.
 
-## Instructions
+Un widget Note pour que l'utilisateur puisse écrire tous ce qu'il veut sans pour autant se soucier d'avoir une feuille ou pas.
 
-Les instructions sont à retrouver dans le pdf instruction.pdf.
+Un widget Youtube afin d'accéder à de la musique pour se détendre ou encore un tutoriel.
 
-**Le non respect de ces instructions entraînera des pertes de points alors prenez le temps de tout lire et de poser des questions si vous ne comprenez pas**
+Un widget Calendrier pour que l'utilisateur puisse s'organiser au fil du temps.
 
-Bonjour 
+Un widget Graphique pour que l'utilisateur soit conscient qu'il y a des pics de concentration au cours de sa journée et qu'il en prenne compte lors de son travail.
+
+## Maquette
+
+Nous avons réalisé une maquette sur Figma:
+<img src="%PUBLIC_URL%/maquette.png" width="50%" height="50%">

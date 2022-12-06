@@ -39,8 +39,14 @@ exports.findOne=(req,res)=>{
 exports.addEvent=(req,res)=>{
     const {event}=req.body;
     const {date}=req.body;
-    const {id}=_.uniqueId();
-    events.push({id,event, date})
+    const {id}=Date.now();
+
+    var evt=new Events({
+        event,
+        date,
+        id
+    });
+    evt.save()
     res.json({
         message:`${event} just add it on ${date}`,
         event:{id,event,date}
@@ -58,7 +64,7 @@ exports.deleteOne=(req,res)=>{
 
 exports.modifyEvent=(req,res)=>{
     const {event}=req.body;
-    const id=req.params;
+    const {id}=req.params;
 
     const eventToUpdate=_.find(events,["id",id]);
 

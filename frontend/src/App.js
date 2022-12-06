@@ -1,6 +1,6 @@
 import Note from './note'
 import './App.css'
-import TodoList from './componentsTodolist/TodoList';
+import TodoList from './componentsTodolist/TodoList'
 import Horloge from './horloge'
 import Calendrier from './calendrier'
 import Chart from './chart'

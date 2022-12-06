@@ -57,6 +57,8 @@
     display: flex;
     flex-flow: row nowrap;
     align-content: space-around;
+    width:500px;
+    height:200px;
     padding: 20px 0;
     font-size: 18px;
     font-weight: "bold";

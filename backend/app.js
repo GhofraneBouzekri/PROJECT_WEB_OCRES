@@ -9,7 +9,10 @@ var usersRouter = require("./routes/users");
 var eventsRouter = require("./routes/events");
 
 var app = express();
-
+var bodyParser=require("body-parser");
+app.use(bodyParser.urlencoded({
+    extended:true
+}));
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -20,6 +23,9 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/events", eventsRouter);
 
+app.listen(3001,()=>{
+    console.log("Server started on port 3001");
+});
 
 //Connexion BDD
 const mongoose=require('mongoose');

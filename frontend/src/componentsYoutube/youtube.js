@@ -5,10 +5,12 @@ import VideoList from "./VideoList";
 import VideoPlayer from "./VideoPlayer";
 
 export default class Youtube extends React.Component {
-
-    state = {
-        videoMetaInfo: [],
-        selectedVideoId: null
+    constructor(props){
+        super(props);
+        this.state = {
+            videoMetaInfo: [],
+            selectedVideoId: null
+        }
     }
 
     onVideoSelected = videoId => {
