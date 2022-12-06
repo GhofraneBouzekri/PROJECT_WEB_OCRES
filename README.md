@@ -25,4 +25,4 @@ Un widget Graphique pour que l'utilisateur soit conscient qu'il y a des pics de 
 ## Maquette
 
 Nous avons réalisé une maquette sur Figma:
-<img src="%PUBLIC_URL%/maquette.png" width="50%" height="50%">
+![Maquette](maquette.png)
