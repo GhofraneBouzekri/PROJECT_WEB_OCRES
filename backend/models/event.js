@@ -3,7 +3,7 @@ const {Schema}=mongoose;
 
 const eventSchema=new mongoose.Schema({
     event:{type:String, required:true},
-    date:String
+    date:Date
 },{timestamps:true
 }
 );
