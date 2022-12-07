@@ -14,13 +14,15 @@
 }
 .todolistcompo{
     grid-column-start: 1;
-    grid-column-end: span 1;
-    grid-row-start: 2;
-    grid-row-end: span 4;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
 
 }
 
 .notecompo{
+    display:flex;
+    justify-content: center;
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -42,22 +44,20 @@
   }
 .titredash{
     display:flex;
-    justify-content:flex-end;
-    width: 799px;
-    height: 59px;
+    justify-content: center;
     font-family: 'IM FELL French Canon';
     font-style: normal;
     font-size: 20px;
     color: #000000;
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 4;
 }
 
 .calcompo{
     grid-column-start: 4;
     grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 
 .Youtubecompo{
@@ -65,4 +65,9 @@
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
+}
+@media screen and (max-width:800){
+    .container{
+        width: 90%;
+    }
 }

@@ -5,8 +5,8 @@ const VideoPlayer = ({ videoId }) => {
     if (!videoId) {
         return (
 
-            <p style={{ textAlign: "center", fontSize: "18px", fontWeight: "bold", color: "yellow" }}>
-                Cherche une vidéo
+            <p style={{ textAlign: "center", fontSize: "18px", fontWeight: "bold", color: "black" }}>
+                Cliquez sur une vidéo
             </p>
         );
     }

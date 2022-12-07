@@ -32,18 +32,16 @@ export default class ApexChart extends React.Component {
                 categories: ['00h-22h', '22h-20h', '20h-18h', '18h-16h', '16h-14h', '14h-12h', '12h-10h',
                   '10h-8h', '8h-6h', '6h-4h', '4h-2h', '2h-00h'
                 ],
+                title:{
+                  text: "HEURES DE CONCENTRATION",
+                  align:"center",
+                  style: {color:"#000000", fontSize :15, fontFamily:"Gill Sans"}
+                }
               },
               fill:{
                 colors:['#826F6F']
               },
-              title:{ 
-                text: "HEURES DE CONCENTRATION",
-                style: {color:"#000000", fontSize :15, fontFamily:"IM FELL French Canon", textAlign:"center"}}
-
-
             },
-          
-          
           };
         }
 
@@ -51,6 +49,6 @@ export default class ApexChart extends React.Component {
           return (
 
           <div className="chart">
-            <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={350} />
+            <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={300} />
             </div>)}
 }

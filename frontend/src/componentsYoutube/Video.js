@@ -24,7 +24,7 @@ function constructVideoTitles(videoData, onVideoSelected) {
                 key={index}
                 onClick={() => selectVideo(id, onVideoSelected)}>
                 <div style={getCss(snippet.thumbnails.high.url)} key={index}>
-                    <p className="title"> {snippet.title}</p>
+                    <p> {snippet.title}</p>
                 </div>
 
             </div>

@@ -55,8 +55,7 @@ const TodoList = () => {
 
         <div className="app-wrapper">
             <div className='header'>
-                <h1> MY TO DO LIST </h1>
-
+                MY TO-DO LIST 
             </div>
             <div>
                 <form onSubmit={onEntreeSubmit}>

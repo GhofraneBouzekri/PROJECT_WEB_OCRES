@@ -48,13 +48,15 @@ export default class Calendrier extends React.Component{
 
   affichage=(newDate)=>{
     if (this.setState.newDate===this.state.events.date){
-        this.getList();
+      <input type="text" action="action">
+        map(this.getList());
         <button onClick={this.addEvent}> ajouter un évènement </button>;
         <button onClick={this.componentDidUpdate}> modifier un évènement </button>;
         <button onClick={this.deleteEvent}> supprimer un évènement </button>;
+        </input>
     }
     else{
-      <input>
+      <input type="text" action="action">
       <button onClick={this.addEvent}> ajouter un évènement </button>;
       </input>
     }

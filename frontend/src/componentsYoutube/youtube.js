@@ -41,15 +41,13 @@ export default class Youtube extends React.Component {
     render() {
         return (
 
-            <div>
+            <div className="container1">
                 <body>
                     <Search onSearch={this.onSearch} />
                 </body>
-
-
+                <VideoPlayer videoId={this.state.selectedVideoId} />
                 <VideoList onVideoSelected={this.onVideoSelected}
                     data={this.state.videoMetaInfo} />
-                <VideoPlayer videoId={this.state.selectedVideoId} />
 
             </div>
 

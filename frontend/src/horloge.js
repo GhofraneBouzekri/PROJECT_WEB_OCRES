@@ -25,9 +25,9 @@ export default class Horloge extends React.Component{
     }
     render(){
         return(
-            <div className="horloge">
-                <div className="timecontainer">
-                    <div className="timedecor">
+            <div className="timecontainer">
+                <div className="timedecor">
+                    <div className="horloge">
                     <h1>{this.state.date.toLocaleTimeString()}</h1></div>
                 </div>
             </div>
