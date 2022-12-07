@@ -46,7 +46,9 @@ Un widget Graphique pour que l'utilisateur prenne conscience des pics de concent
 Nous avons réalisé une maquette sur Figma:
 
 Voici la maquette sur ordinateur portable (MacBook Air M2)
+
 ![Maquette](maquette1.png)
 
 Voici la maquette sur téléphone (iPhone 14)
+
 ![Maquette](maquette2.png)
