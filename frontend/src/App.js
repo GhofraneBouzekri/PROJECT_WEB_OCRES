@@ -1,9 +1,9 @@
-import Note from './note'
+import Note from './componentsNote/note'
 import './App.css'
 import TodoList from './componentsTodolist/TodoList'
-import Horloge from './horloge'
-import Calendrier from './calendrier'
-import Chart from './chart'
+import Horloge from './componentsHorloge/horloge'
+import Calendrier from './componentsCalendrier/calendrier'
+import Chart from './componentsChart/chart'
 import Youtube from './componentsYoutube/youtube'
 
 export default function App() {
