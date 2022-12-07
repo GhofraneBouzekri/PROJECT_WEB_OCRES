@@ -22,9 +22,22 @@
     font-style:'normal';
     font-size: 25px;
   }
-  @media screen and (max-width:800){
-    .horloge{
-        width: 90%;
+  @media (max-width:1000px){
+    .timecontainer{
+        width:80%;
+        height: 110%;
     }
-    
-}
+    .timedecor{
+        display: flex;
+        justify-items: center;
+        width:95%;
+        height: 70%;
+    }
+    .horloge{
+        display:flex;
+        justify-content: center;
+        width:90%;
+        height: 90%;
+        font-size: 15px;
+    }
+  }

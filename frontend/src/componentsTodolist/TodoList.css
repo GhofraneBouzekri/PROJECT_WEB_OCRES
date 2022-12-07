@@ -110,13 +110,36 @@ input :focus,
 button :focus {
     outline: none;
 }
-@media screen and (max-width:800){
-    .app-wrapper{
-        width: 90%;
+
+@media (max-width:1000px){
+    .button-add{
+        width:60%;
+        height: auto;
     }
-    
+    .button-delete{
+        width:60%;
+        height: auto;
+    }
+    .button-edit{
+        width:60%;
+        height: auto;
+    }
+    .header{
+        width:90%;
+        height: auto;
+    }
+    .list{
+        width:90%;
+        height: auto;
+    }
+    .list-item{
+        width:90%;
+        height: auto;
+    }
+    .task-input{
+        width:90%;
+        height: auto;
+    }
 }
-
-
 
 

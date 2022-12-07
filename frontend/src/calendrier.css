@@ -6,9 +6,4 @@
 .affichage{
   display:flex;
 }
-@media screen and (max-width:800){
-  .calendrier{
-      width: 90%;
-  }
-  
-}
+

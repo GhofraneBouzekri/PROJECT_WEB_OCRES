@@ -17,7 +17,7 @@ export default class NameForm extends React.Component {
       return (
         <div className="note">
             <textarea rows='13'
-                cols='25'
+                cols='28'
                 placeholder='Your note here...' 
                 value={this.state.value} 
                 onChange={this.handleChange} />
